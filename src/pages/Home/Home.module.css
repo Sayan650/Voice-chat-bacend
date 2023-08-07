@@ -6,11 +6,39 @@
     margin-bottom: 30px;
 }
 
-.cardWrapper {
+.container{ 
     display: flex;
+    flex: content;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
-    margin-top: 6rem;
+    justify-content: space-between;
+}
+
+.left{
+    margin-left: 15%;
+    display: flex;
+    flex-direction: column;
+}
+.p{
+    display: flex;
+    color: #8267c7a9;
+    font-size: 32px;
+}
+.heading{
+    padding-right: 20%;
+    font-size: 96px;
+    padding-bottom: 5%;
+}
+.Button{
+    padding-top: 5%;
+    padding-right: 82%;
+}
+
+.img{
+    right: 0;
+    align-items: center;
+    justify-content: end;
+    margin-top: 5%;
 }
 
 .signinWrapper {
