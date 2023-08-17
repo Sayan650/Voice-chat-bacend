@@ -8,7 +8,10 @@
 .logoutButton {
     background: none;
     cursor: pointer;
-    border: none;
+    border-radius: 20%;
+    border-color: #0077ff;
+    padding: 10px;
+    border-top: 5px;
 }
 
 .navRight {
@@ -29,4 +32,12 @@
 .navRight h3{
     font-size: large;
     font-weight: bold;
+}
+
+.logout{
+    font-size: large;
+    font-weight: bold;
+    color: #0077ff;
+    display: flex;
+    
 }

@@ -14,7 +14,7 @@
 .tabButton {
     width: 60px;
     height: 60px;
-    background: #B8C8C2;
+    background: #003459;
     border: none;
     outline: none;
     border-radius: 10px;
@@ -34,7 +34,7 @@
 }
 
 .bottomParagraph {
-    color: #5603AD;
+    color: #0077ff;
     width: 70%;
     margin: 0 auto;
     margin-top: 20px;

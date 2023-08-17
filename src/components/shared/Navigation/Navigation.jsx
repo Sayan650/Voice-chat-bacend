@@ -4,6 +4,7 @@ import styles from "./Navigation.module.css";
 import { logout } from "../../../http";
 import { useDispatch, useSelector } from "react-redux";
 import { setAuth } from "../../../store/authSlice";
+import {Button} from "../Button/Button"
 
 const Navigation = () => {
   const brandStyle = {
@@ -47,7 +48,9 @@ const Navigation = () => {
             />
           </Link>
           <button className={styles.logoutButton} onClick={logoutUser}>
-            <img src="/images/logout.png" alt="logout" />
+            
+            <span className={styles.logout}>Log Out</span>
+            {/* <img src="/images/logout.png" alt="logout" /> */}
           </button>
         </div>
       )}

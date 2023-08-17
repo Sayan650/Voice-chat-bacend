@@ -11,6 +11,7 @@
     flex: content;
     flex-direction: row;
     align-items: center;
+    color: #ffffff;
     justify-content: space-between;
 }
 
@@ -21,17 +22,20 @@
 }
 .p{
     display: flex;
-    color: #8267c7a9;
+    opacity: 50%;
     font-size: 32px;
 }
 .heading{
     padding-right: 20%;
-    font-size: 96px;
+    font-size: 8vh;
+    font-weight: 500;
     padding-bottom: 5%;
 }
 .Button{
     padding-top: 5%;
-    padding-right: 82%;
+    display: flex;
+    justify-content: flex-start;
+    padding-right: 75%;
 }
 
 .img{
@@ -39,6 +43,7 @@
     align-items: center;
     justify-content: end;
     margin-top: 5%;
+    margin-right: 15%;
 }
 
 .signinWrapper {

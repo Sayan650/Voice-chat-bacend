@@ -80,7 +80,7 @@
 }
 
 .actionBtn {
-    background: #ea2a08;
+    background: #086aea;
     outline: none;
     margin-left: 2rem;
     display: flex;
@@ -92,7 +92,7 @@
 }
 
 .actionBtn:hover {
-    background: #ff0000;
+    background: #0040ff;
 }
 
 .actionBtn span {

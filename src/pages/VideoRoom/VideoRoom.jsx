@@ -4,7 +4,7 @@ import { useWebRTC } from "../../hooks/useWebRTC";
 import { useParams, useHistory } from "react-router-dom";
 import { getRoom } from "../../http";
 
-import styles from "./Room.module.css";
+import styles from "./VideoRoom.module.css";
 
 const Room = () => {
   const user = useSelector((state) => state.auth.user);

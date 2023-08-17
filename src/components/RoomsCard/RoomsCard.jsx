@@ -32,7 +32,7 @@ const RoomsCard = ({ room }) => {
       </div>
       <div className={styles.peopleCount}>
         <span>{room.totalPeople}</span>
-        <img src="/images/user.png" alt="user-icon" />
+        <img className={styles.avatar} src="/images/user.png" alt="user-icon" />
       </div>
     </div>
   );

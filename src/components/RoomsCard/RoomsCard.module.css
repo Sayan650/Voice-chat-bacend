@@ -1,5 +1,5 @@
 .card {
-    background: #B8C8C2;
+    background: #003459;
     padding: 20px;
     border-radius: 10px;
     cursor: pointer;
@@ -62,4 +62,8 @@
 
 .singleSpeaker .names {
     margin-left: 20px;
+}
+.avatar {
+    height: 50%;
+    width: 50%;
 }
