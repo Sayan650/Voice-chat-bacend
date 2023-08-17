@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import styles from "./AddRoomModal.module.css";
 import TextInput from "../shared/TextInput/TextInput";
 import { createRoom as create } from '../../http';
+import { createVideoRoom as createVideo } from '../../http';
 import { useHistory } from 'react-router-dom';
 
 const AddRoomModal = ({onClose}) => {
@@ -14,6 +15,16 @@ const AddRoomModal = ({onClose}) => {
       if (!topic) return;
       const { data } = await create({ topic, roomType });
       history.push(`/room/${data.id}`);
+    } catch (err) {
+      console.log(err.message);
+    }
+  }
+
+  async function createVideoRoom() {
+    try {
+      if (!topic) return;
+      const { data } = await createVideo({ topic, roomType });
+      history.push(`/videoRoom/${data.id}`);
     } catch (err) {
       console.log(err.message);
     }
@@ -69,7 +80,7 @@ const AddRoomModal = ({onClose}) => {
             <img src="/images/celebration.png" alt="celebration" />
             <span>Voice Chat</span>
           </button>
-          <button onClick={createRoom} className={styles.footerButton}>
+          <button onClick={createVideoRoom} className={styles.footerButton}>
             <img src="/images/celebration.png" alt="celebration" />
             <span>Video Chat</span>
           </button>

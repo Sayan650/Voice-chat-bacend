@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { useSelector } from "react-redux";
-import { useWebRTC } from "../../hooks/useWebRTC";
+import { useWebRTC } from "../../hooks/useVideo";
 import { useParams, useHistory } from "react-router-dom";
 import { getRoom } from "../../http";
 
 import styles from "./VideoRoom.module.css";
 
-const Room = () => {
+const VideoRoom = () => {
   const user = useSelector((state) => state.auth.user);
   const { id: roomId } = useParams();
   const [room, setRoom] = useState(null);
@@ -74,7 +74,7 @@ const Room = () => {
                     src={client.avatar}
                     alt=""
                   />
-                  <audio
+                  <video
                     autoPlay
                     playsInline
                     ref={(instance) => {
@@ -110,4 +110,4 @@ const Room = () => {
   );
 };
 
-export default Room;
+export default VideoRoom;

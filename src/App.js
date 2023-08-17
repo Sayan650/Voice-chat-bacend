@@ -40,6 +40,9 @@ function App() {
         <ProtectedRoute path="/room/:id">
           <Room />
         </ProtectedRoute>
+        <ProtectedRoute path="/videoRoom/:id">
+          <Room />
+        </ProtectedRoute>
       </Switch>
     </BrowserRouter>
   );
