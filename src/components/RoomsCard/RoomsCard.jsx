@@ -7,7 +7,10 @@ const RoomsCard = ({ room }) => {
   return (
     <div
       onClick={() => {
+        if(room.type === "voice")
           history.push(`/room/${room.id}`);
+        else
+          history.push(`videoRoom/${room.id}`);
       }}
       className={styles.card}
     >

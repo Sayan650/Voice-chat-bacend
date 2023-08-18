@@ -1,9 +1,7 @@
 import "./App.css";
-import { useState } from "react";
 import {
   BrowserRouter,
   Switch,
-  Routes,
   Route,
   Redirect,
 } from "react-router-dom";
@@ -13,6 +11,7 @@ import Authenticate from "./pages/Authenticate/Authenticate";
 import Activate from "./pages/Activate/Activate";
 import Rooms from "./pages/Rooms/Rooms";
 import Room from "./pages/Room/Room";
+import VideoRoom from "./pages/VideoRoom/VideoRoom";
 import { useSelector } from "react-redux";
 import { useLoadingWithRefresh } from "./hooks/useLoadingWithRefresh";
 import Loader from "./components/shared/Loader/Loader";
@@ -41,7 +40,7 @@ function App() {
           <Room />
         </ProtectedRoute>
         <ProtectedRoute path="/videoRoom/:id">
-          <Room />
+          <VideoRoom />
         </ProtectedRoute>
       </Switch>
     </BrowserRouter>

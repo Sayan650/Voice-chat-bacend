@@ -7,13 +7,16 @@ import { useHistory } from 'react-router-dom';
 
 const AddRoomModal = ({onClose}) => {
   const [roomType, setRoomType] = useState("open");
+  const [type, setType] = useState("");
   const [topic, setTopic] = useState("");
   const history = useHistory();
 
   async function createRoom() {
     try {
       if (!topic) return;
-      const { data } = await create({ topic, roomType });
+      setType("voice");
+      const chatType = "voice";
+      const { data } = await create({ topic, roomType, type:chatType });
       history.push(`/room/${data.id}`);
     } catch (err) {
       console.log(err.message);
@@ -23,12 +26,15 @@ const AddRoomModal = ({onClose}) => {
   async function createVideoRoom() {
     try {
       if (!topic) return;
-      const { data } = await createVideo({ topic, roomType });
+      setType("video");
+      const chatType = "video";
+      const { data } = await createVideo({ topic, roomType, type: chatType });
       history.push(`/videoRoom/${data.id}`);
     } catch (err) {
       console.log(err.message);
     }
-  }
+}
+
 
   return (
     <div className={styles.modalMask}>

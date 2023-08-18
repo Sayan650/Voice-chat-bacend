@@ -1,4 +1,4 @@
-import { useEffect, useState, useRef, useCallback } from "react";
+import { useEffect, useRef, useCallback } from "react";
 import { ACTIONS } from "../actions";
 import socketInit from "../socket";
 import freeice from "freeice";
@@ -121,6 +121,7 @@ export const useWebRTC = (roomId, user) => {
           localElement.volume = 0;
           localElement.srcObject = localMediaStream.current;
         }
+        console.log(localElement)
       });
 
       // Emit the action to join
