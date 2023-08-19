@@ -69,14 +69,15 @@ const VideoRoom = () => {
             return (
               <div className={styles.client} key={client.id}>
                 <div className={styles.userHead}>
-                  <img
+                  {/* <img
                     className={styles.userAvatar}
                     src={client.avatar}
                     alt=""
-                  />
+                  /> */}
                   <video
                     autoPlay
                     playsInline
+                    className={styles.video}
                     ref={(instance) => {
                       provideRef(instance, client.id);
                     }}

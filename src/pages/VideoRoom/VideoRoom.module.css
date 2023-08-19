@@ -4,11 +4,16 @@
     align-items: center;
 }
 .userHead {
-    width: 900px;
-    height: 900px;
+    width: 640px;
+    height: 480px;
     border-radius: 20%;
     border: 3px solid #5453e0;
     position: relative;
+}
+.video{
+    width: 640px;
+    height: 480px;
+    border-radius: 20%;
 }
 
 .userHead + h4 {
@@ -80,7 +85,7 @@
 }
 
 .actionBtn {
-    background: #ea2a08;
+    background: #0879ea;
     outline: none;
     margin-left: 2rem;
     display: flex;
@@ -92,7 +97,7 @@
 }
 
 .actionBtn:hover {
-    background: #ff0000;
+    background: #1100ff;
 }
 
 .actionBtn span {
